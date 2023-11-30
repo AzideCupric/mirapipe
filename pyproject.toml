@@ -16,6 +16,7 @@ include = ["mirapipe-clent", "mirapipe-server"]
 python = "^3.12"
 loguru = "^0.7.2"
 ttkbootstrap = "^1.10.1"
+pydantic = "^2.5.2"
 
 [tool.poetry.group.lint.dependencies]
 ruff = "^0.1.0"

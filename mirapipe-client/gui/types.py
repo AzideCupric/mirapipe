@@ -1,5 +1,7 @@
 from typing import TypedDict
 from enum import StrEnum
+from pathlib import Path
+from urllib.parse import ParseResult as URL
 
 class ConnectStatus(StrEnum):
     """连接状态"""
@@ -9,6 +11,6 @@ class ConnectStatus(StrEnum):
 
 class ClientStateStore(TypedDict):
     """客户端数据状态存储"""
-    cert_path: str
-    server: str
+    cert_path: Path
+    server: URL
     is_connected: ConnectStatus
